@@ -1,24 +1,29 @@
 <template>
-  <div class="hello">
+  <div class="hello nls">
     <ul class="clearfix pdt2">
-      <li class="fl al-c w2-5">
+      <li class="fl al-c w2">
         <router-link to="/">
           首页
         </router>
       </li>
-      <li class="fl al-c w2-5">
+      <li class="fl al-c w2">
         <router-link to="/usercenter">
           个人中心
         </router>
       </li>
-      <li class="fl al-c w2-5">
+      <li class="fl al-c w2">
         <router-link to="/msg">
           消息
         </router>
       </li>
-      <li class="fl al-c w2-5">
+      <li class="fl al-c w2">
         <router-link to="/msgggg">
           找不到页面
+        </router>
+      </li>
+      <li class="fl al-c w2">
+        <router-link to="/scssapi">
+          ScssApi
         </router>
       </li>
     </ul>

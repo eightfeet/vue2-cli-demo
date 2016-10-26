@@ -1,8 +1,10 @@
 // 不同模块应代码分离
 import msgRoutes from './msg';
 import userCenterRoutes from './usercenter';
+import scssapiRoutes from './scssapi';
 
 const allRoutes = [
+  ...scssapiRoutes,
   ...msgRoutes,
   ...userCenterRoutes
 ];

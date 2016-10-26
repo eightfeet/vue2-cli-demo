@@ -1,6 +1,6 @@
 // import xhr from './jquery';
-import xhr from './superagent';
-// import xhr from './vueResource';
+// import xhr from './superagent';
+import xhr from './vueResource';
 
 /**
  * XHR 请求接口定义

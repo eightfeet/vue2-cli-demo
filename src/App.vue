@@ -1,5 +1,5 @@
-<style lang="less">
-  @import "assets/style/main.less";
+<style lang="scss">
+  @import "assets/style/main.scss";
   .fade-enter-active, .fade-leave-active {
   transition: all .5s ease;
   }
@@ -15,9 +15,6 @@
 <template>
   <div>
     <nave></nave>
-    <div class="al-c pdt5">
-      <img src="./assets/images/logo.png" alt="" style="width:8rem">
-    </div>
     <transition name="fade" mode="out-in">
       <router-view></router-view>
     </transition>
@@ -25,6 +22,7 @@
 </template>
 <script>
 import nave from 'components/nave';
+import attachFastclick from 'fastclick';
 export default {
   components: { nave },
 
@@ -35,7 +33,7 @@ export default {
     };
   },
   mounted () {
-
+    attachFastclick.attach(window.document.body);
   }
 };
 </script>

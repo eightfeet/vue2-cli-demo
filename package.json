@@ -10,9 +10,11 @@
     "unit": "karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
-    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
+    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
+    "publish": "expect publish.sh"
   },
   "dependencies": {
+    "fastclick": "^1.0.6",
     "superagent": "^2.3.0",
     "vue": "^2.0.1",
     "vue-resource": "^1.0.3",
@@ -24,6 +26,8 @@
     "less-loader": "^2.2.3",
     "scss": "^0.2.4",
     "scss-loader": "0.0.1",
+    "node-sass": "^3.10.1",
+    "sass-loader": "^4.0.2",
     "autoprefixer": "^6.4.0",
     "babel-core": "^6.0.0",
     "babel-eslint": "^7.0.0",

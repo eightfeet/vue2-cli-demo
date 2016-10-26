@@ -12,6 +12,7 @@ import './filters/';
 /* VueTouch暂不支持vue2.0 */
 // import VueTouch from 'vue-touch';
 // Vue.use(VueTouch);
+// 里面用fastclick实现
 
 /* eslint-disable no-new */
 new Vue({

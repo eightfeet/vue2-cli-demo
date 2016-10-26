@@ -1,7 +1,7 @@
 import { rootPath, errHandler } from './config'
 
 const xhr = ({ url, body = null, method = 'get' }) => {
-  const defer = $.Deferred();
+  const defer = $.Deferred()
 
   $.ajax({
     type: method,
@@ -13,9 +13,9 @@ const xhr = ({ url, body = null, method = 'get' }) => {
     // crossDomain: true
   })
   .done(defer.resolve)
-  .fail(errHandler);
+  .fail(errHandler)
 
-  return defer.promise();
-};
+  return defer.promise()
+}
 
-export default xhr;
+export default xhr

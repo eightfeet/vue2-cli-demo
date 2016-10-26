@@ -1,8 +1,11 @@
 <template>
   <div class="hello">
+    <div class="al-c pdt5">
+      <img src="../assets/images/logo.png" alt="" style="width:8rem">
+    </div>
     <h1 class="pdt1 al-c">{{ msg }}</h1>
     <!-- 时间过滤器 -->
-    <div class="al-c pdt1">更新时间：{{ date | dateTimeFormatter(null, 'cn')}}</div>
+    <div class="al-c pdt1">更新时间：{{ date | dateTimeFormatter(3, 'cn')}}</div>
   </div>
 </template>
 

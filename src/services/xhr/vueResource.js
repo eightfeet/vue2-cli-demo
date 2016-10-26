@@ -15,8 +15,9 @@ const xhr = ({ url, body, method = 'get' }) => {
   return new Promise((resolve, reject) => {
     Vue.http[method.toLowerCase()](
       rootPath + url,
-      body, {
-        emulateJSON: false, // 黑api
+      body,
+      { // AS
+        emulateJSON: false,
         headers: REQ_HEADER
       })
       .then((res) => { // 从封装体中解构出data字段
