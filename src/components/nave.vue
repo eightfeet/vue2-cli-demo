@@ -7,6 +7,11 @@
         </router>
       </li>
       <li class="fl al-c w2">
+        <router-link to="/scssapi">
+          CssApi
+        </router>
+      </li>
+      <li class="fl al-c w2">
         <router-link to="/usercenter">
           个人中心
         </router>
@@ -19,11 +24,6 @@
       <li class="fl al-c w2">
         <router-link to="/msgggg">
           找不到页面
-        </router>
-      </li>
-      <li class="fl al-c w2">
-        <router-link to="/scssapi">
-          ScssApi
         </router>
       </li>
     </ul>
