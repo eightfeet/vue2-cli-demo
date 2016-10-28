@@ -1,6 +1,6 @@
 .DS_Store
-.sh
 node_modules/
+publish.sh
 dist/
 npm-debug.log
 test/unit/coverage
